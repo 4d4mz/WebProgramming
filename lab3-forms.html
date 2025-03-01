@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Coffee Form</title>
+        <meta charset="utf=8">
+    </head>
+    <body>
+        <form action="https://www.w3schools.com/action_page.php">
+            <h2>Contact Info</h2>
+            <fieldset>
+                <label for="name"> Name:
+                    <input id="name" type="text" required>
+                </label>
+                <label for="email" required> Email:
+                    <input id="email" type="email">
+                </label>
+            </fieldset>
+            <h2>Coffee Order</h2>
+            <fieldset>
+                <label for="coffee-type">Coffee Type:</label>
+                <select id="coffee-type">
+                    <option>(select)</option>
+                    <option>Frapaccino</option>
+                    <option>Latte</option>
+                    <option>Cappuccino</option>
+                    <option>Espresso</option>
+                </select>
+            </fieldset>
+            <h2>Size</h2>
+            <fieldset>
+                <label>
+                    <input value="small" type="radio" name="size"/>Small
+                  </label>
+                  <label>
+                    <input value="medium" type="radio" name="size"/>Medium
+                  </label>
+                  <label>
+                    <input type="radio" value="large" name="size"/>Large
+                  </label>
+            </fieldset>
+            <h2>Extras?</h2>
+            <fieldset>
+                <label>
+                    <input type="checkbox" value="extra-whip" name="extras"/>Extra Whip
+                </label>
+                <label>
+                    <input type="checkbox" value="oat-milk" name="extras"/>Oat Milk
+                </label>
+                <label>
+                    <input type="checkbox" value="extra-shot" name="extras"/>Extra Shot
+                </label>
+            </fieldset>
+            <h2>Other Instructions?</h2>
+            <fieldset>
+                <textarea></textarea>
+            </fieldset>
+            <button id="submit">Submit</button>
+        </form>
+        <style>
+            form {
+                margin-left: 50px;
+                margin-right: 50px;
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+            fieldset {
+                border: none;
+            }
+            textarea {
+                resize: none;
+                height: 150px;
+                width: 400px;
+            }
+            label {
+                display: block;
+                padding: 0.5rem 0;
+                text-align: left;
+            }
+            h2 {
+                margin-bottom: 0.5px;
+            }
+        </style>
+    </body>
+</html>
